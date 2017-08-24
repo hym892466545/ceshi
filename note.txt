@@ -1,0 +1,53 @@
+jQuery
+	JS库
+		jQuery
+		YUI
+		prototype.js
+		.......
+
+	特点：
+		轻量级
+		支持CSS3选择器
+		跨浏览器
+		插件
+		链式风格
+		隐式迭代
+		........
+	下载
+		1.x -- 兼容问题处理更多，解决IE9之前浏览器兼容问题
+		2.x
+		3.x -- 不再解决IE9之前浏览器兼容问题
+
+	jQuery 以面向对象的方式封装
+		jQuery 对象，通常包装了 DOM 元素
+		应该将 jQuery 对象 与 DOM 对象区分，jQuery 对象能调用 jQuery 对象本身定义的那些方法，但不能直接调用 DOM 对象的方法，同样DOM对象也不能直接调用 jQuery 对象方法
+
+		jQuery 对象 ==> DOM 对象
+			$("selector")[index]
+			$("selector").get(index)
+			$("selector").get()
+		DOM 对象 ==> jQuery 对象
+			$(domObject)
+
+	使用
+		$ <==> jQuery
+
+		搭建使用框架：
+			$(document).ready(function(){
+				
+			});
+
+			$(window).on("load", function(){})
+
+		ready(fn) 方法是在 DOM 结构加载结束就需要调用 ready() 参数表示的函数
+		$(document).ready(fn) 方法的简写：$(fn);
+
+
+		window.onload = funciton(){} 是在页面内容加载完毕再执行函数内容
+
+	选择器：快速查找元素，包装到 jQuery 对象中
+
+
+	jquery.cookie 插件
+
+	模板引擎 artTemplate
